@@ -3,7 +3,6 @@ import pygame
 from utilities import game_state
 
 BLACK = (0, 0, 0)
-GREY = (127, 127, 127)
 WHITE = (255, 255, 255)
 WINDOW_HEIGHT = 1080
 WINDOW_WIDTH = 1080
@@ -25,12 +24,7 @@ def draw_black_rect(coordinates, screen):
     x_coordinate, y_coordinate = coordinates
     rect = pygame.Rect(int(x_coordinate), int(y_coordinate), 20, 20)
     pygame.draw.rect(screen, BLACK, rect, width=0)
-
-def draw_grey_rect(coordinates, screen):
-    x_coordinate, y_coordinate = coordinates
-    rect = pygame.Rect(int(x_coordinate), int(y_coordinate), 20, 20)
-    pygame.draw.rect(screen, GREY, rect, width=0)
-
+    
 def draw_white_rect(coordinates, screen):
     x_coordinate, y_coordinate = coordinates
     rect = pygame.Rect(int(x_coordinate), int(y_coordinate), 20, 20)

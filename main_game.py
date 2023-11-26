@@ -12,12 +12,9 @@ running = True
 screen.fill(WHITE)
 
 PAUSE = True
-time_since_last_action = 0
 
 while running:
     draw_grid(screen)
-    dt = clock.tick()
-    time_since_last_action += dt
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
